@@ -1,0 +1,117 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+App {
+  text-align: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.cities {
+  display:flex;
+  height: 100px;
+  width: 100%;
+  color:white;
+  text-justify: distribute-all-lines;
+  word-spacing: 100px;
+  flex-direction: column;
+  background: green;
+  text-align: center;
+}
+
+.itineraries {
+  display:flex;
+  height: 100px;
+  width: 100%;
+  color:white;
+  flex-direction: column;
+  background: green;
+  text-align: center;
+}
+
+
+
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+#indexstyle {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  margin-bottom: 15px;
+  
+
+}
+
+#textoflecha {
+  display: flex;
+  justify-content: center;
+  color: green;
+  margin-bottom: 15px;
+
+}
+
+
+.arrow {
+
+  width: 50%;
+  margin-left: 25%;
+  
+}
+
+#linksfooter {
+  display: flex;
+  justify-content: end;
+  margin-left: 25%;
+  align-items: center;
+  color: green;
+  margin-bottom: -20px;
+  
+
+}
+
+.icon {
+  margin-top: 10px;
+  width: 20%;
+  margin-left: 40%;
+
+  
+}
+
+.footer {
+  color:goldenrod;
+}
+
