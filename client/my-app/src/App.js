@@ -29,7 +29,7 @@ function App() {
 <Route path = "/User" component = {User}/>
 <Route path = "/cities" component = {Cities}/>
 <Route path = "/itinerary/:cityName" component = {Itinerary}></Route>
-<Route path = "/activity" component = {Activity}></Route>
+<Route path = "/activity/:itineraryName" component = {Activity}></Route>
 
 
 </Switch>

@@ -5,7 +5,8 @@ const cors = require("cors");
 const cityRouter = require("./routes/cityrouter.js");
 const mongoose = require('mongoose');
 const itineraryroute = require("./routes/itineraryroute.js");
-const activityroute = require("./routes/activityroute.js")
+const activityroute = require("./routes/activityroute.js");
+const userroute = require("./routes/userroute.js")
 
 require('dotenv').config();
 
@@ -29,8 +30,10 @@ app.use(cors());
 app.use("/cities",cityRouter);
 app.use("/itinerary",itineraryroute);
 app.use("/activity", activityroute);
+app.use("/users", userroute);
 app.get("/Sample", function (req,res) { 
     res.send("HELLO WORLD");
+
 });
 
 app.listen(port);

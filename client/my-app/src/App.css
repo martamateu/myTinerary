@@ -32,7 +32,16 @@ App {
   text-align: center;
 }
 
-
+.activities {
+  display:flex;
+  height: 100px;
+  width: 100%;
+  color:white;
+  text-justify: distribute-all-lines;
+  flex-direction: column;
+  background: green;
+  text-align: center;
+}
 
 
 .App-logo {

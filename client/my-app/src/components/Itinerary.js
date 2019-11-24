@@ -21,7 +21,7 @@ class Itinerary extends Component {
       
        {
         
-        this.props.itinerary.map(itinerary => <NavLink className="itineraries" to={"/activity/"+itinerary.name} key={itinerary.itineraryName}> {itinerary.itineraryName} </NavLink>) 
+        this.props.itinerary.map(itinerary => <NavLink className="itineraries" to={"/activity/"+itinerary.itineraryName} key={itinerary.itineraryName}> {itinerary.itineraryName} </NavLink>) 
         
       
 

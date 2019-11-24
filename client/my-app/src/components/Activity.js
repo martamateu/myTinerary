@@ -9,20 +9,25 @@ class Activity extends Component {
       this.props.getActivity(this.props.match.params.itineraryName);
     }
     render(){
+  console.log(this.props);
   
   if (this.props.isLoaded) {
     
     return (
   
-      <div>
+      <div className  ="activities">
       
+   
        {
         
-        this.props.activity.map (activity => <p key={activity._id}>> {activity.name} </p>) 
-         
+       
+         this.props.activity.map (activity => <p key={activity._id}> {activity.activityName} {activity.alt} </p>) 
+     
         
        }
       
+      
+
       </div>
     )
   
@@ -39,7 +44,7 @@ class Activity extends Component {
   
   const mapStateToProps = (state) => {
     return {
-    activity: state.activity.activities,
+    activity: state.activity.activity,
       isLoaded: state.activity.isLoaded
   
     }

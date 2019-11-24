@@ -19,22 +19,33 @@ activityrouter.post('/', (req, res) => {
       res.status(500).send("Server error")}) 
 });
 
-// activityrouter.get('/:itineraryname',
+activityrouter.get('/:itineraryname',
+	(req, res) => {
+      let activityRequested = req.params.itineraryname;
+      console.log("activity",req.params.itineraryname);
+      
+  		activityModel.find({ itineraryName: activityRequested })
+			.then(activity => {
+				res.send(activity)
+			})
+			.catch(err => console.log(err));
+});
+
+
+// activityrouter.route("/city").get((req, res) => {
+//     activity.find({ city: req.params.city}, (err, activity) => {
+//       res.json(activity);
+//     });
+//   });
+
+//   activityrouter.route('/:city',
 // 	(req, res) => {
-//   		let activityRequested = req.params.itinerary.name;
-//   		activityModel.find({ activityrequested: activity.name })
-// 			.then(activity.name => {
+//   		let activityRequested = req.params.city;
+//   		activityModel.find({ city: activityRequested })
+// 			.then(activity => {
 // 				res.send(activity)
 // 			})
 // 			.catch(err => console.log(err));
 // });
-
-
-activityrouter.route("/:activityname").get((req, res) => {
-    activity.find({ activity: req.params.activity.name }, (err, activity) => {
-      res.json(activity);
-    });
-  });
-
 
 module.exports = activityrouter;

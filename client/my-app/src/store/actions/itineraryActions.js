@@ -2,7 +2,7 @@ export const getItinerary=(cityName) => dispatch => {
 
     
         
-    console.log("home")
+    console.log("home",cityName)
     fetch("/itinerary/"+cityName)
     .then(response => response.json())
     .then(json => {
