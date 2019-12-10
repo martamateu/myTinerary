@@ -14,23 +14,23 @@ class Activity extends Component {
   if (this.props.isLoaded) {
     
     return (
+
+     
   
       <div className  ="activities">
-      
-   
+
+
        {
         
-       
-         this.props.activity.map (activity => <p key={activity._id}> {activity.activityName} {activity.alt} </p>) 
-     
         
-       }
-      
-      
+         this.props.activity.map (activity => <p key={activity._id}> {activity.activityName} <button id="DropDown-Button">{activity.alt} </button>  </p> )
+    
+        }
+         </div>
+         )
 
-      </div>
-    )
   
+
   }else {
      return(<p>loading</p>)
   

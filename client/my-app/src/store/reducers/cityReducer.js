@@ -8,7 +8,7 @@ const initialState = {
     switch (action.type) {
       case "GET_CITIES":
         return {
-            ... state, 
+            state, 
             cities: action.payload,
             isLoaded: true
      

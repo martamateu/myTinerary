@@ -3,11 +3,10 @@
   margin: 0;
   padding: 0;
 }
-
-App {
-  text-align: center;
-  text-align: center;
-  height: 100vh;
+.header{
+  
+    color:white;
+    font-weight: bold;
 }
 
 .cities {
@@ -37,10 +36,17 @@ App {
   height: 100px;
   width: 100%;
   color:white;
-  text-justify: distribute-all-lines;
+  white-space: inherit;
   flex-direction: column;
   background: green;
   text-align: center;
+}
+
+
+#Dropdown-Button {
+  position: relative; 
+  display: block;
+
 }
 
 
@@ -58,11 +64,6 @@ App {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #09d3ac;
-}
-
 
 #indexstyle {
   padding-top: 70px;
@@ -101,26 +102,22 @@ App {
   
 }
 
-#linksfooter {
-  display: flex;
-  justify-content: end;
-  margin-left: 25%;
-  align-items: center;
-  color: green;
-  margin-bottom: -20px;
-  
-
-}
-
-.icon {
-  margin-top: 10px;
-  width: 20%;
-  margin-left: 40%;
-
-  
-}
 
 .footer {
-  color:goldenrod;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: teal;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color:white;
+    font-weight: bold;
+
+  
 }
 

@@ -8,7 +8,7 @@ const initialState = {
     switch (action.type) {
       case "GET_ACTIVITY":
         return {
-            ... state, 
+            state, 
             activity: action.payload,
             isLoaded: true
      
